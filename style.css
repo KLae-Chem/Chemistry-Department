@@ -168,20 +168,22 @@ body {
 
     .logo {
         width: 200px;
+        height: auto;
     }
+}
 
-    .portal-header h1 {
-        font-size: 28px;
-    }
+.portal-header h1 {
+    font-size: 28px;
+}
 
-    .portal-header h2 {
-        font-size: 15px;
-        letter-spacing: 3px;
-    }
+.portal-header h2 {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
 
-    .portal-menu {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
+.portal-menu {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
 
 }

@@ -1,98 +1,85 @@
-:root {
-    --primary: #123c69;
-    --primary-dark: #0b2948;
-    --accent: #0335238f;
-
-    --light: #f4f7fa;
-    --white: #ffffff;
-
-    --text: #263238;
-    --muted: #436178;
-
-    --border: #e1e7ec;
-
-    --shadow: 0 12px 30px rgba(18, 60, 105, 0.10);
-}
+/* ========================================
+   CHEMISTRY ACADEMIC PORTAL
+   ======================================== */
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    color: var(--text);
-    background: var(--light);
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f7fb;
+    color: #064477;
 }
 
 
-/* ================================
-   MAIN PAGE
-================================ */
+/* ========================================
+   MAIN PORTAL
+   ======================================== */
 
 .entry-portal {
+    width: 100%;
     min-height: 100vh;
-    padding: 60px 30px;
-    text-align: center;
+    padding: 25px 25px 40px;
 }
+
+
+/* ========================================
+   LOGO
+   ======================================== */
 
 .logo-symbol {
-    width: 500px;
-    height: 250px;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #0f3d6e;
-    border-radius: 50%;
-
-    overflow: hidden;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
-.logo-symbol img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.logo {
+    width: 250px;
+    height: auto;
+    max-width: 80%;
+    display: inline-block;
 }
 
 
-/* CHEMISTRY */
+/* ========================================
+   HEADER
+   ======================================== */
 
-.entry-portal h1 {
-    margin: 20px 0 5px;
+.entry-portal > h1 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    color: #064477;
+    margin-top: 0;
+}
 
-    color: #123c69;
+.entry-portal > h2 {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #159b75;
+    margin-top: 5px;
+}
 
-    font-size: 42px;
+.entry-portal > p {
+    text-align: center;
+    font-size: 14px;
+    color: #6f7f8d;
+    margin-top: 12px;
+    margin-bottom: 35px;
 }
 
 
-/* ACADEMIC PORTAL */
-
-.entry-portal h2 {
-    margin: 0;
-
-    color: #19a974;
-
-    font-size: 22px;
-    letter-spacing: 3px;
-}
-
-
-/* Department of Chemistry */
-
-.entry-portal>p {
-    color: #6b7780;
-}
-
-
-/* MAIN MENU */
+/* ========================================
+   PORTAL MENU
+   ======================================== */
 
 .portal-menu {
-    max-width: 1200px;
-    margin: 50px auto;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
 
     display: grid;
 
@@ -102,259 +89,96 @@ body {
 }
 
 
-/* MAIN CARDS */
+/* ========================================
+   PORTAL CARD
+   ======================================== */
 
 .portal-card {
-    display: block;
-
-    background: #ffffff;
-
-    border: 1px solid #e1e7ec;
-
-    border-radius: 16px;
-
-    padding: 30px 20px;
-
-    text-decoration: none;
-
-    color: #263238;
-
-    box-shadow: 0 12px 30px rgba(18, 60, 105, 0.10);
-
-    transition: 0.3s;
-}
-
-
-/* MAIN ICON */
-
-.portal-card i {
-    font-size: 36px;
-
-    color: #123c69;
-}
-
-
-/* MAIN TITLE */
-
-.portal-card h3 {
-    color: #123c69;
-
-    margin-bottom: 10px;
-}
-
-
-/* MAIN DESCRIPTION */
-
-.portal-card p {
-    color: #6b7780;
-}
-
-
-/* HOVER */
-
-.portal-card:hover {
-    transform: translateY(-8px);
-}
-
-.portal-card:hover i {
-    color: #19a974;
-}
-
-
-/* ================================
-   DEPARTMENT PAGE
-================================ */
-
-.department-page {
-    min-height: 100vh;
-
-    max-width: 1100px;
-
-    margin: 0 auto;
-
-    padding: 50px 30px;
-
-    text-align: center;
-}
-
-.back-button {
-    display: inline-block;
-
-    margin-bottom: 35px;
-
-    padding: 9px 18px;
-
-    color: #123c69;
-
-    background: #ffffff;
-
-    border: 1px solid #e1e7ec;
-
-    border-radius: 8px;
-
-    text-decoration: none;
-}
-
-.back-button:hover {
-    background: #123c69;
-
-    color: #ffffff;
-}
-
-.department-header {
-    margin-bottom: 45px;
-}
-
-.department-header h1 {
-    margin: 0;
-
-    color: #123c69;
-
-    font-size: 38px;
-}
-
-
-/* DEPARTMENT MENU */
-
-.department-menu {
-    width: 100%;
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 25px;
-}
-
-
-/* DEPARTMENT CARD */
-
-.department-card {
-    min-height: 180px;
-
-    padding: 30px;
+    min-height: 160px;
 
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     justify-content: center;
 
-    text-decoration: none;
+    padding: 25px 20px;
+
+    background: #ffffff;
 
     border-radius: 16px;
 
-    border: 2px solid;
+    text-align: center;
+    text-decoration: none;
 
-    transition: 0.3s;
-}
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
-.department-card i {
-    font-size: 42px;
-
-    margin-bottom: 18px;
-}
-
-.department-card h2 {
-    margin: 0;
-
-    font-size: 21px;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 
-/* Vision */
+/* Hover */
 
-.vision-card {
-    background: #e8f4ff;
-    border-color: #4aa3df;
-}
-
-.vision-card i,
-.vision-card h2 {
-    color: #1976b8;
-}
-
-
-/* Mission */
-
-.mission-card {
-    background: #fff0e6;
-    border-color: #e69a62;
-}
-
-.mission-card i,
-.mission-card h2 {
-    color: #d66a18;
-}
-
-
-/* Educational Philosophy */
-
-.philosophy-card {
-    background: #fff9df;
-    border-color: #e1bd45;
-}
-
-.philosophy-card i,
-.philosophy-card h2 {
-    color: #a27d00;
-}
-
-
-/* Graduate Profile */
-
-.graduate-card {
-    background: #eee9ff;
-    border-color: #9278df;
-}
-
-.graduate-card i,
-.graduate-card h2 {
-    color: #6546c7;
-}
-
-
-/* Staff */
-
-.staff-card {
-    background: #e8f7ef;
-    border-color: #63b887;
-}
-
-.staff-card i,
-.staff-card h2 {
-    color: #27804d;
-}
-
-
-/* Facilities */
-
-.facilities-card {
-    background: #e9f3f3;
-    border-color: #5da7a7;
-}
-
-.facilities-card i,
-.facilities-card h2 {
-    color: #287979;
-}
-
-
-/* Department Hover */
-
-.department-card:hover {
-    transform: translateY(-7px);
+.portal-card:hover {
+    transform: translateY(-5px);
 
     box-shadow:
-        0 12px 28px rgba(0, 0, 0, 0.15);
+        0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 
-/* ================================
-   RESPONSIVE
-================================ */
+/* ========================================
+   ICON
+   ======================================== */
+
+.portal-card i {
+    font-size: 34px;
+
+    color: #064477;
+
+    margin-bottom: 16px;
+}
+
+
+/* First icon green */
+
+.portal-card:first-child i {
+    color: #16a57a;
+}
+
+
+/* ========================================
+   CARD TITLE
+   ======================================== */
+
+.portal-card h3 {
+    font-size: 18px;
+
+    color: #064477;
+
+    margin-bottom: 14px;
+
+    font-weight: 700;
+}
+
+
+/* ========================================
+   CARD DESCRIPTION
+   ======================================== */
+
+.portal-card p {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #71808c;
+}
+
+
+/* ========================================
+   TABLET
+   ======================================== */
 
 @media (max-width: 1000px) {
 
@@ -364,30 +188,37 @@ body {
 
 }
 
-@media (max-width: 700px) {
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .entry-portal {
+        padding: 20px 15px 30px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .entry-portal > h1 {
+        font-size: 28px;
+    }
+
+    .entry-portal > h2 {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
 
     .portal-menu {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 
-    .department-menu {
-        grid-template-columns: 1fr;
-    }
-
-    .entry-portal {
-        padding: 40px 20px;
-    }
-
-    .entry-portal h1 {
-        font-size: 34px;
-    }
-
-    .entry-portal h2 {
-        font-size: 18px;
-    }
-
-    .department-header h1 {
-        font-size: 32px;
+    .portal-card {
+        min-height: 145px;
     }
 
 }
